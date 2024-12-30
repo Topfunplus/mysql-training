@@ -1,3 +1,6 @@
+
+-- ROW_NUMBER、RANK、DENSE_RANK
+-- 
 -- 从employee表中选择部门名称(dname)、员工姓名(ename)、薪水(salary)以及一个基于部门和薪水排序的行号(rk) --
 SELECT dname, ename, salary, ROW_NUMBER() OVER (
         PARTITION BY
